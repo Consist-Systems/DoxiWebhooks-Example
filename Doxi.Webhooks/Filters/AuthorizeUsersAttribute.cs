@@ -11,11 +11,6 @@ namespace Clalit.Insulin
 {
     public class AuthorizeUsersAttribute : ActionFilterAttribute
     {
-
-        public AuthorizeUsersAttribute()
-        {
-        }
-
         public override Task OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
         {
             var config = context.HttpContext.RequestServices.GetService<IConfiguration>();
